@@ -47,7 +47,7 @@ jobs:
         shell: bash
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: prepare for cache restore
       run: |
         sudo mkdir -p /opt/intel
@@ -132,7 +132,7 @@ jobs:
         shell: bash
         
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: install openmpi
       run: |
         brew install open-mpi
